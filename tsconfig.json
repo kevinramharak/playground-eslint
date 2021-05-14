@@ -1,0 +1,37 @@
+{
+    "compilerOptions": {
+        "esModuleInterop": true,
+        "isolatedModules": true,
+        "jsx": "preserve",
+        "lib": ["esnext", "dom"],
+        "module": "esnext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "skipLibCheck": true,
+        "sourceMap": true,
+        "strict": true,
+        "target": "ES2015",
+        "types": [
+            "vite/client"
+        ],
+        "plugins": [
+            {
+                "name": "@vuedx/typescript-plugin-vue"
+            }
+        ],
+        "paths": {
+            "@": [
+                "./src/"
+            ],
+            "@/*": [
+                "./src/*"
+            ]
+        }
+    },
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.d.ts",
+        "src/**/*.tsx",
+        "src/**/*.vue",
+    ]
+}

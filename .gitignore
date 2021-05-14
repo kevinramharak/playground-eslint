@@ -1,0 +1,9 @@
+# libs
+node_modules/
+
+# dist
+dist/
+dist-ssr/
+
+# env files
+*.local

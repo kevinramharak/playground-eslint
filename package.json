@@ -1,0 +1,42 @@
+{
+    "name": "typescript-playground-plugin-vue",
+    "version": "1.0.0",
+    "main": "dist/index.js",
+    "private": true,
+    "description": "A template to build a playground plugin with Vue 3",
+    "license": "MIT",
+    "keywords": [
+        "playground-plugin",
+        "playground-plugin-template"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kevinramharak/typescript-playground-plugin-vue"
+    },
+    "scripts": {
+        "bootstrap": "node scripts/getDTS.js",
+        "serve": "serve dist",
+        "prepack": "yarn build",
+        "tsc": "vue-tsc --noEmit",
+        "watch:build": "vite build --watch --mode development",
+        "build:production": "vue-tsc --noEmit && vite build",
+        "build:development": "vue-tsc --noEmit && vite build --mode development"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-vue": "^1.2.2",
+        "@vue/compiler-sfc": "^3.0.5",
+        "@vuedx/typescript-plugin-vue": "^0.6.3",
+        "monaco-editor": "^0.24.0",
+        "node-fetch": "^2.6.1",
+        "precss": "^4.0.0",
+        "serve": "^11.3.2",
+        "typescript": "latest",
+        "vite": "^2.3.2",
+        "vls": "^0.7.2",
+        "vue-tsc": "^0.0.24"
+    },
+    "dependencies": {
+        "tslib": "^1.10.0",
+        "vue": "^3.0.5"
+    }
+}
