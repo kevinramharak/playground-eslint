@@ -16,7 +16,7 @@
     "scripts": {
         "bootstrap": "node scripts/getDTS.js",
         "serve": "serve dist",
-        "prepack": "yarn build",
+        "prepack": "yarn build:production",
         "tsc": "vue-tsc --noEmit",
         "watch:build": "vite build --watch --mode development",
         "build:production": "vue-tsc --noEmit && vite build",
